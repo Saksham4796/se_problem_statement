@@ -1,4 +1,4 @@
-##Problem Statement: Distributed Data Analytics for Sales Performance using MySQL Database and Redis
+## Problem Statement: Distributed Data Analytics for Sales Performance using MySQL Database and Redis
 
 Your company has recently started tracking sales data for its products and has stored the information in a MySQL database. The database contains information about sales for each product, including the date, product name, and the number of units sold. Your company would like to have a quick and easy way to analyze the sales data to gain insights into the performance of each product.
 
