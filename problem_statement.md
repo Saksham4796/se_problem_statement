@@ -14,9 +14,7 @@ The master node should extract sales data for each product from the MySQL databa
 The worker nodes should perform the following data analysis tasks on the extracted sales data:
 
 1. Calculate the total number of units sold for each product
-
 2. Determine the average number of units sold per day for each product
-
 3. Identify the top-selling product in terms of total units sold
 
 #### HTML report: 
