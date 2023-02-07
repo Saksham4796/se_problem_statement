@@ -21,9 +21,9 @@ The worker nodes should perform the following data analysis tasks on the extract
 
 #### HTML report: 
 The master node should generate an HTML report that summarizes the results of the data analysis. The report should include the following information for each product:
-Total units sold
-Average units sold per day
-Rank based on total units sold (e.g. 1st, 2nd, 3rd, etc.)
+1. Total units sold
+2. Average units sold per day
+3. Rank based on total units sold (e.g. 1st, 2nd, 3rd, etc.)
 
 The HTML report should be easy to understand and visually appealing, with clear and concise graphics, charts, and tables. The report should also be interactive, allowing users to quickly access the data they need by clicking on different sections of the report.
 
