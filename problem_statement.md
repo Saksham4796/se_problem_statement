@@ -3,7 +3,7 @@
 Your company has recently started tracking sales data for its products and has stored the information in a MySQL database. The database contains information about sales for each product, including the date, product name, and the number of units sold. Your company would like to have a quick and easy way to analyze the sales data to gain insights into the performance of each product.
 
 #### Objective: 
-Develop a distributed software application that will extract sales data from the MySQL database, perform data analysis tasks on the data, and display the results in a HTML file.
+Develop a distributed software application that will extract sales data from the MySQL database, perform data analysis tasks on the data, and display the results in a HTML file. In this problem statement, the master node and worker nodes refer to processes or threads within the distributed software application that is being developed. 
 
 The application should perform the following tasks:
 
