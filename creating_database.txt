@@ -1,0 +1,41 @@
+CREATE DATABASE sales_db;
+
+USE sales_db;
+
+create table sales_data(
+	Order_Number int,
+	Quantity_Ordered int,
+	Price_Each decimal(10,3),
+	Order_Line_Number int,
+	Sales decimal(10,3),
+	Order_Date varchar(255),
+	Status varchar(255),
+	QTR_Id int,
+	Month_Id int,
+	Year_Id int,
+	Product_Line varchar(255),
+	Msrp int,
+	Product_Code varchar(255),
+	Customer_Name varchar(255),
+	Phone varchar(255),
+	Address_Line1 varchar(255),
+	Address_Line2 varchar(255),
+	City varchar(255),
+	State varchar(255),
+	Postal_Code varchar(255),
+	Country varchar(255),
+	Territory varchar(255),
+	Contact_Lastname varchar(255),
+	Contact_Firstname varchar(255),
+	Deal_size varchar(255)
+);
+
+LOAD DATA INFILE '/var/lib/mysql-files/sales_data_sample.csv'
+INTO table sales_data
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+
+SELECT * from sales_data LIMIT 10;
