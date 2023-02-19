@@ -1,7 +1,3 @@
-CREATE DATABASE sales_db;
-
-USE sales_db;
-
 create table sales_data(
 	Order_Number int,
 	Quantity_Ordered int,
@@ -30,12 +26,3 @@ create table sales_data(
 	Deal_size varchar(255)
 );
 
-LOAD DATA INFILE '/var/lib/mysql-files/sales_data_sample.csv'
-INTO table sales_data
-FIELDS TERMINATED BY ','
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-
-
-SELECT * from sales_data LIMIT 10;

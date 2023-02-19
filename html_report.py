@@ -53,4 +53,3 @@ html += """
 with open("sales_report.html", "w") as file:
     file.write(html)
 
-

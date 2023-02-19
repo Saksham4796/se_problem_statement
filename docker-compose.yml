@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+
+  
+  custom_mysql:
+    image: industrial_problem:1.0
+    environment: 
+      MYSQL_ROOT_PASSWORD: sak479619
+      MYSQL_DATABASE: SALES_DATABASE
+    ports:
+      - "3316:3306"
