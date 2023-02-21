@@ -1,7 +1,6 @@
 version: '3.8'
 services:
 
-  
   custom_mysql:
     image: industrial_problem:1.0
     environment: 
