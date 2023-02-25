@@ -1,0 +1,180 @@
+Year,Month,Commodity,Total Sale
+2003,1,Classic Cars,29184.550
+2003,1,Trucks and Buses,33060.030
+2003,1,Vintage Cars,40707.830
+2003,1,Trains,4933.550
+2003,2,Motorcycles,21135.860
+2003,2,Classic Cars,12000.000
+2003,2,Planes,36162.920
+2003,2,Ships,24475.690
+2003,2,Vintage Cars,22462.330
+2003,2,Trains,3800.000
+2003,3,Classic Cars,81959.850
+2003,3,Trucks and Buses,8575.960
+2003,3,Vintage Cars,41491.050
+2003,3,Motorcycles,12069.370
+2003,4,Motorcycles,18549.370
+2003,4,Classic Cars,43381.360
+2003,4,Trucks and Buses,25250.590
+2003,4,Planes,31993.770
+2003,4,Ships,25690.470
+2003,4,Vintage Cars,19799.000
+2003,4,Trains,4756.470
+2003,5,Motorcycles,18813.320
+2003,5,Classic Cars,79941.970
+2003,5,Trucks and Buses,22167.390
+2003,5,Vintage Cars,42731.440
+2003,6,Classic Cars,30543.010
+2003,6,Trucks and Buses,13837.750
+2003,6,Planes,31006.390
+2003,6,Ships,27517.070
+2003,6,Vintage Cars,25014.740
+2003,6,Trains,9333.880
+2003,6,Motorcycles,2300.000
+2003,7,Motorcycles,32681.280
+2003,7,Classic Cars,70042.230
+2003,7,Trucks and Buses,22852.820
+2003,7,Vintage Cars,24293.400
+2003,8,Motorcycles,36804.440
+2003,8,Classic Cars,31562.430
+2003,8,Trucks and Buses,12303.760
+2003,8,Planes,30791.770
+2003,8,Ships,25293.610
+2003,8,Vintage Cars,21895.370
+2003,8,Trains,7374.940
+2003,9,Classic Cars,101044.080
+2003,9,Trucks and Buses,36270.590
+2003,9,Vintage Cars,45637.900
+2003,9,Trains,6034.520
+2003,9,Motorcycles,3155.580
+2003,9,Ships,18903.190
+2003,10,Motorcycles,52903.390
+2003,10,Classic Cars,170718.020
+2003,10,Trucks and Buses,21567.780
+2003,10,Vintage Cars,76230.490
+2003,10,Planes,54249.410
+2003,10,Ships,11623.800
+2003,10,Trains,9889.000
+2003,11,Motorcycles,92104.060
+2003,11,Classic Cars,340403.910
+2003,11,Trucks and Buses,109739.290
+2003,11,Vintage Cars,164377.320
+2003,11,Planes,44122.200
+2003,11,Ships,77168.360
+2003,11,Trains,22288.130
+2003,12,Motorcycles,19659.840
+2003,12,Classic Cars,104465.560
+2003,12,Trucks and Buses,36131.290
+2003,12,Vintage Cars,40194.810
+2003,12,Trains,2544.750
+2003,12,Planes,7120.960
+2004,1,Motorcycles,35647.760
+2004,1,Classic Cars,96231.210
+2004,1,Trucks and Buses,4600.000
+2004,1,Vintage Cars,64339.480
+2004,1,Planes,32516.040
+2004,1,Ships,27913.080
+2004,1,Trains,6768.300
+2004,2,Motorcycles,40704.310
+2004,2,Classic Cars,97494.670
+2004,2,Trucks and Buses,27999.900
+2004,2,Planes,35037.570
+2004,2,Ships,28260.130
+2004,2,Vintage Cars,23924.460
+2004,2,Trains,4968.010
+2004,3,Classic Cars,57904.310
+2004,3,Trucks and Buses,31803.130
+2004,3,Vintage Cars,47085.450
+2004,3,Trains,9641.820
+2004,3,Ships,20523.850
+2004,4,Motorcycles,30676.560
+2004,4,Classic Cars,72529.060
+2004,4,Vintage Cars,46777.590
+2004,4,Planes,22952.590
+2004,5,Motorcycles,38821.820
+2004,5,Classic Cars,52827.410
+2004,5,Trucks and Buses,30967.200
+2004,5,Planes,34931.030
+2004,5,Vintage Cars,13967.130
+2004,5,Trains,5117.050
+2004,5,Ships,3838.000
+2004,6,Motorcycles,40509.790
+2004,6,Classic Cars,26096.490
+2004,6,Trucks and Buses,36238.540
+2004,6,Vintage Cars,30022.060
+2004,6,Planes,9352.010
+2004,6,Ships,16477.350
+2004,7,Motorcycles,18713.880
+2004,7,Classic Cars,112157.210
+2004,7,Trucks and Buses,33893.740
+2004,7,Planes,36140.080
+2004,7,Vintage Cars,38614.890
+2004,7,Ships,21532.200
+2004,7,Trains,10051.610
+2004,8,Motorcycles,54015.390
+2004,8,Classic Cars,167256.890
+2004,8,Trucks and Buses,31161.900
+2004,8,Vintage Cars,68842.020
+2004,8,Planes,31085.200
+2004,8,Ships,25526.930
+2004,8,Trains,8218.260
+2004,9,Motorcycles,35038.480
+2004,9,Classic Cars,68753.800
+2004,9,Trucks and Buses,36402.020
+2004,9,Vintage Cars,62245.090
+2004,9,Planes,31222.880
+2004,9,Ships,23964.910
+2004,9,Trains,6227.080
+2004,10,Motorcycles,33294.360
+2004,10,Classic Cars,159348.100
+2004,10,Trucks and Buses,64833.620
+2004,10,Vintage Cars,105356.100
+2004,10,Planes,32689.060
+2004,10,Ships,42273.220
+2004,10,Trains,15001.670
+2004,11,Motorcycles,121818.990
+2004,11,Classic Cars,298544.860
+2004,11,Trucks and Buses,77240.820
+2004,11,Vintage Cars,186054.610
+2004,11,Planes,104681.630
+2004,11,Ships,46502.380
+2004,11,Trains,17226.010
+2004,12,Motorcycles,19182.480
+2004,12,Classic Cars,81352.640
+2004,12,Trucks and Buses,49835.600
+2004,12,Vintage Cars,67906.510
+2004,12,Planes,56737.010
+2004,12,Ships,23303.800
+2004,12,Trains,14737.890
+2005,1,Classic Cars,99823.920
+2005,1,Motorcycles,31890.580
+2005,1,Trucks and Buses,26492.880
+2005,1,Vintage Cars,42070.250
+2005,1,Planes,11262.270
+2005,1,Ships,29868.490
+2005,1,Trains,6510.170
+2005,2,Motorcycles,38771.190
+2005,2,Classic Cars,115195.170
+2005,2,Trucks and Buses,31138.020
+2005,2,Vintage Cars,65304.560
+2005,2,Planes,23935.380
+2005,2,Trains,6469.360
+2005,2,Ships,9088.620
+2005,3,Motorcycles,40329.600
+2005,3,Classic Cars,73202.990
+2005,3,Trucks and Buses,13486.420
+2005,3,Vintage Cars,58100.380
+2005,3,Planes,42489.400
+2005,3,Ships,27680.170
+2005,3,Trains,8462.400
+2005,4,Motorcycles,44788.910
+2005,4,Classic Cars,35151.600
+2005,4,Planes,6002.240
+2005,4,Vintage Cars,13993.810
+2005,4,Ships,6284.000
+2005,5,Classic Cars,85662.100
+2005,5,Trucks and Buses,40104.230
+2005,5,Planes,26676.840
+2005,5,Vintage Cars,5608.580
+2005,5,Motorcycles,7303.200
+2005,5,Trains,4449.390
