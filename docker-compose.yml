@@ -1,10 +1,15 @@
-version: '3.8'
 services:
-
+  pythonapp:
+    build: ./python/
+    command: sh -c "while true; do python3 ./app/data_processing.py; sleep 10s; done"
+    depends_on:
+      - custom_mysql
+      
   custom_mysql:
-    image: industrial_problem:1.0
-    environment: 
-      MYSQL_ROOT_PASSWORD: sak479619
-      MYSQL_DATABASE: SALES_DATABASE
+    build: ./mysql/
+    restart: always
+    environment:
+     MYSQL_DATABASE: 'SALES_DATABASE'
+     MYSQL_ROOT_PASSWORD: 'sak479619'
     ports:
-      - "3316:3306"
+      - '3316:3306'

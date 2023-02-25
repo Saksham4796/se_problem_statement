@@ -1,0 +1,5 @@
+pandas
+mysql-connector-python
+redis
+numpy>=1.13.3
+datetime

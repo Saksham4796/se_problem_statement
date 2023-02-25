@@ -3,11 +3,8 @@ import redis
 import pandas as pd
 
 # Connect to the MySQL database
-conn = mysql.connector.connect(user='root', password='sak479619', host='localhost', database='sales_db')
+conn = mysql.connector.connect(user='root', password='sak479619', host='custom_mysql', database='SALES_DATABASE')
 cursor = conn.cursor()
-
-# Connect to Redis
-redis_conn = redis.Redis(host='localhost', port=6379, db=0)
 
 # Extract sales data from MySQL using SQL queries
 query = "SELECT Quantity_Ordered, Price_Each, Product_Line, Status, Order_Date FROM sales_data"

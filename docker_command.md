@@ -27,3 +27,6 @@ exit
 
 #### Docker command to stop the execution of yaml file
 docker-compose down
+
+#### Docker command to remove any containers that are not associated with a service defined in the current compose file
+docker-compose down --remove-orphans
