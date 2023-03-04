@@ -1,7 +1,7 @@
 services:
   pythonapp:
     build: ./python/
-    command: sh -c "while true; do python3 ./app/data_processing.py; sleep 10s; done"
+    command: sh -c "while true; do python3.10 ./app/data_processing_spark.py; sleep 10s; done"
     depends_on:
       - custom_mysql
       
@@ -9,7 +9,7 @@ services:
     build: ./mysql/
     restart: always
     environment:
-     MYSQL_DATABASE: 'SALES_DATABASE'
-     MYSQL_ROOT_PASSWORD: 'sak479619'
+      MYSQL_DATABASE: 'SALES_DATABASE'
+      MYSQL_ROOT_PASSWORD: 'sak479619'
     ports:
       - '3316:3306'

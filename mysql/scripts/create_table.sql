@@ -25,4 +25,3 @@ create table sales_data(
 	Contact_Firstname varchar(255),
 	Deal_size varchar(255)
 );
-
