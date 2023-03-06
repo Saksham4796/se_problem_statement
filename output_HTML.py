@@ -76,7 +76,7 @@ with open('output.html', 'w') as f:
         }}
       }}
     </style>
-    <script src="./web.js"></script>
+    <script src="./website.js"></script>
    </head>
    <body>
     {html_table}
