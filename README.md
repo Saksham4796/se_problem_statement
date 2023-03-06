@@ -4,7 +4,7 @@ This repository holds a problem statement prominent in the software industry. Th
 
 The `mysql` directory is used to build the docker container which contains the Database. The `sales_data_sample.csv` file contains the sample sales data for the problem statement and is uploaded to the MySQL database. The `Dockerfile` is used to build the docker image which contains the Sales data hosted on MySQL database. The `scripts` folder contains .sql files which can build the database on the docker container. 
 
-The `python` folder is used to build the docker container which performs data processing tasks on the dataset. The `data_processing.py` file performs data processing operation on the dataset and thus stores total sale for each commodity for each month of the year in the `total_sales.csv` file.
+The `python` folder is used to build the docker container which performs data processing tasks on the dataset. The `data_processing_spark.py` file performs data processing operation using Pyspark(so that data is processing using distributed computing fashion) on the dataset and thus stores total sale for each commodity for each month of the year in different csv files present in the `total_sales.csv` folder. This is because Spark writes the output to multiple files, with each file containing a part of the output. All these output files are merged to a single `total_sales_merged.csv` file.
 
 The `docker-compose.yml` file builds both the docker containers and also make a connection between them.
 
