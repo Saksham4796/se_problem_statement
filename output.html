@@ -1,0 +1,1159 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My CSV Data</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      td.number {
+        text-align: right;
+      }
+
+      td.boolean {
+        text-align: center;
+      }
+
+      td.date {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
+
+        th {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+
+        td {
+          border-bottom: none;
+          position: relative;
+          padding-left: 50%;
+        }
+
+        td:before {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap;
+          content: attr(data-label);
+          font-weight: bold;
+        }
+      }
+    </style>
+    <script src="./web.js"></script>
+   </head>
+   <body>
+    <table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Year</th>
+      <th>Month</th>
+      <th>Product_Line</th>
+      <th>Total_Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2003</td>
+      <td>1</td>
+      <td>Classic Cars</td>
+      <td>29184.549927</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>1</td>
+      <td>Trains</td>
+      <td>4933.550171</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>1</td>
+      <td>Trucks and Buses</td>
+      <td>33060.029785</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>1</td>
+      <td>Vintage Cars</td>
+      <td>40707.830200</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>2</td>
+      <td>Classic Cars</td>
+      <td>12000.000000</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>2</td>
+      <td>Motorcycles</td>
+      <td>21135.860107</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>2</td>
+      <td>Planes</td>
+      <td>36162.919922</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>2</td>
+      <td>Ships</td>
+      <td>24475.689941</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>2</td>
+      <td>Trains</td>
+      <td>3800.000000</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>2</td>
+      <td>Vintage Cars</td>
+      <td>22462.329956</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>3</td>
+      <td>Classic Cars</td>
+      <td>81959.849792</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>3</td>
+      <td>Motorcycles</td>
+      <td>12069.369751</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>3</td>
+      <td>Trucks and Buses</td>
+      <td>8575.959961</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>3</td>
+      <td>Vintage Cars</td>
+      <td>41491.049805</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>4</td>
+      <td>Classic Cars</td>
+      <td>43381.359924</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>4</td>
+      <td>Motorcycles</td>
+      <td>18549.370117</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>4</td>
+      <td>Planes</td>
+      <td>31993.769653</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>4</td>
+      <td>Ships</td>
+      <td>25690.469849</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>4</td>
+      <td>Trains</td>
+      <td>4756.470093</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>4</td>
+      <td>Trucks and Buses</td>
+      <td>25250.589844</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>4</td>
+      <td>Vintage Cars</td>
+      <td>19799.000000</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>5</td>
+      <td>Classic Cars</td>
+      <td>79941.969849</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>5</td>
+      <td>Motorcycles</td>
+      <td>18813.319702</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>5</td>
+      <td>Trucks and Buses</td>
+      <td>22167.390015</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>5</td>
+      <td>Vintage Cars</td>
+      <td>42731.439819</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>6</td>
+      <td>Classic Cars</td>
+      <td>30543.009766</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>6</td>
+      <td>Motorcycles</td>
+      <td>2300.000000</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>6</td>
+      <td>Planes</td>
+      <td>31006.389099</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>6</td>
+      <td>Ships</td>
+      <td>27517.069946</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>6</td>
+      <td>Trains</td>
+      <td>9333.879883</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>6</td>
+      <td>Trucks and Buses</td>
+      <td>13837.750000</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>6</td>
+      <td>Vintage Cars</td>
+      <td>25014.739868</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>7</td>
+      <td>Classic Cars</td>
+      <td>70042.229919</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>7</td>
+      <td>Motorcycles</td>
+      <td>32681.279785</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>7</td>
+      <td>Trucks and Buses</td>
+      <td>22852.819946</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>7</td>
+      <td>Vintage Cars</td>
+      <td>24293.400024</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>8</td>
+      <td>Classic Cars</td>
+      <td>31562.430176</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>8</td>
+      <td>Motorcycles</td>
+      <td>36804.439819</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>8</td>
+      <td>Planes</td>
+      <td>30791.770386</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>8</td>
+      <td>Ships</td>
+      <td>25293.610107</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>8</td>
+      <td>Trains</td>
+      <td>7374.939697</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>8</td>
+      <td>Trucks and Buses</td>
+      <td>12303.760010</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>8</td>
+      <td>Vintage Cars</td>
+      <td>21895.369995</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>9</td>
+      <td>Classic Cars</td>
+      <td>101044.079712</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>9</td>
+      <td>Motorcycles</td>
+      <td>3155.580078</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>9</td>
+      <td>Ships</td>
+      <td>18903.189941</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>9</td>
+      <td>Trains</td>
+      <td>6034.519897</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>9</td>
+      <td>Trucks and Buses</td>
+      <td>36270.589844</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>9</td>
+      <td>Vintage Cars</td>
+      <td>45637.900024</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>10</td>
+      <td>Classic Cars</td>
+      <td>170718.021118</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>10</td>
+      <td>Motorcycles</td>
+      <td>52903.390137</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>10</td>
+      <td>Planes</td>
+      <td>54249.410156</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>10</td>
+      <td>Ships</td>
+      <td>11623.800049</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>10</td>
+      <td>Trains</td>
+      <td>9888.999756</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>10</td>
+      <td>Trucks and Buses</td>
+      <td>21567.780029</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>10</td>
+      <td>Vintage Cars</td>
+      <td>76230.490295</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>11</td>
+      <td>Classic Cars</td>
+      <td>340403.910095</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>11</td>
+      <td>Motorcycles</td>
+      <td>92104.060303</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>11</td>
+      <td>Planes</td>
+      <td>44122.199585</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>11</td>
+      <td>Ships</td>
+      <td>77168.359375</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>11</td>
+      <td>Trains</td>
+      <td>22288.130066</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>11</td>
+      <td>Trucks and Buses</td>
+      <td>109739.289307</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>11</td>
+      <td>Vintage Cars</td>
+      <td>164377.320251</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>12</td>
+      <td>Classic Cars</td>
+      <td>104465.560303</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>12</td>
+      <td>Motorcycles</td>
+      <td>19659.839844</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>12</td>
+      <td>Planes</td>
+      <td>7120.960205</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>12</td>
+      <td>Trains</td>
+      <td>2544.750000</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>12</td>
+      <td>Trucks and Buses</td>
+      <td>36131.290161</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>12</td>
+      <td>Vintage Cars</td>
+      <td>40194.810181</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>1</td>
+      <td>Classic Cars</td>
+      <td>96231.209717</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>1</td>
+      <td>Motorcycles</td>
+      <td>35647.760010</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>1</td>
+      <td>Planes</td>
+      <td>32516.040039</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>1</td>
+      <td>Ships</td>
+      <td>27913.079834</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>1</td>
+      <td>Trains</td>
+      <td>6768.300049</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>1</td>
+      <td>Trucks and Buses</td>
+      <td>4600.000000</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>1</td>
+      <td>Vintage Cars</td>
+      <td>64339.479553</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>2</td>
+      <td>Classic Cars</td>
+      <td>97494.670166</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>2</td>
+      <td>Motorcycles</td>
+      <td>40704.309570</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>2</td>
+      <td>Planes</td>
+      <td>35037.569946</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>2</td>
+      <td>Ships</td>
+      <td>28260.130005</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>2</td>
+      <td>Trains</td>
+      <td>4968.009888</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>2</td>
+      <td>Trucks and Buses</td>
+      <td>27999.899902</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>2</td>
+      <td>Vintage Cars</td>
+      <td>23924.459961</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>3</td>
+      <td>Classic Cars</td>
+      <td>57904.310303</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>3</td>
+      <td>Ships</td>
+      <td>20523.849976</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>3</td>
+      <td>Trains</td>
+      <td>9641.820557</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>3</td>
+      <td>Trucks and Buses</td>
+      <td>31803.130005</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>3</td>
+      <td>Vintage Cars</td>
+      <td>47085.449707</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>4</td>
+      <td>Classic Cars</td>
+      <td>72529.059998</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>4</td>
+      <td>Motorcycles</td>
+      <td>30676.559937</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>4</td>
+      <td>Planes</td>
+      <td>22952.590210</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>4</td>
+      <td>Vintage Cars</td>
+      <td>46777.590149</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>5</td>
+      <td>Classic Cars</td>
+      <td>52827.409668</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>5</td>
+      <td>Motorcycles</td>
+      <td>38821.820190</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>5</td>
+      <td>Planes</td>
+      <td>34931.029663</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>5</td>
+      <td>Ships</td>
+      <td>3838.000000</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>5</td>
+      <td>Trains</td>
+      <td>5117.049805</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>5</td>
+      <td>Trucks and Buses</td>
+      <td>30967.200073</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>5</td>
+      <td>Vintage Cars</td>
+      <td>13967.129761</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>6</td>
+      <td>Classic Cars</td>
+      <td>26096.489868</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>6</td>
+      <td>Motorcycles</td>
+      <td>40509.790222</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>6</td>
+      <td>Planes</td>
+      <td>9352.009766</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>6</td>
+      <td>Ships</td>
+      <td>16477.349976</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>6</td>
+      <td>Trucks and Buses</td>
+      <td>36238.540405</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>6</td>
+      <td>Vintage Cars</td>
+      <td>30022.060303</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>7</td>
+      <td>Classic Cars</td>
+      <td>112157.210083</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>7</td>
+      <td>Motorcycles</td>
+      <td>18713.880249</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>7</td>
+      <td>Planes</td>
+      <td>36140.080200</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>7</td>
+      <td>Ships</td>
+      <td>21532.199951</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>7</td>
+      <td>Trains</td>
+      <td>10051.609863</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>7</td>
+      <td>Trucks and Buses</td>
+      <td>33893.739624</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>7</td>
+      <td>Vintage Cars</td>
+      <td>38614.889771</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>8</td>
+      <td>Classic Cars</td>
+      <td>167256.890564</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>8</td>
+      <td>Motorcycles</td>
+      <td>54015.389893</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>8</td>
+      <td>Planes</td>
+      <td>31085.200073</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>8</td>
+      <td>Ships</td>
+      <td>25526.929810</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>8</td>
+      <td>Trains</td>
+      <td>8218.260010</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>8</td>
+      <td>Trucks and Buses</td>
+      <td>31161.900146</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>8</td>
+      <td>Vintage Cars</td>
+      <td>68842.019775</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>9</td>
+      <td>Classic Cars</td>
+      <td>68753.800049</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>9</td>
+      <td>Motorcycles</td>
+      <td>35038.479980</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>9</td>
+      <td>Planes</td>
+      <td>31222.880249</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>9</td>
+      <td>Ships</td>
+      <td>23964.909790</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>9</td>
+      <td>Trains</td>
+      <td>6227.080078</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>9</td>
+      <td>Trucks and Buses</td>
+      <td>36402.020020</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>9</td>
+      <td>Vintage Cars</td>
+      <td>62245.089844</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>10</td>
+      <td>Classic Cars</td>
+      <td>159348.099854</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>10</td>
+      <td>Motorcycles</td>
+      <td>33294.359985</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>10</td>
+      <td>Planes</td>
+      <td>32689.060181</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>10</td>
+      <td>Ships</td>
+      <td>42273.219971</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>10</td>
+      <td>Trains</td>
+      <td>15001.670166</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>10</td>
+      <td>Trucks and Buses</td>
+      <td>64833.619995</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>10</td>
+      <td>Vintage Cars</td>
+      <td>105356.100403</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>11</td>
+      <td>Classic Cars</td>
+      <td>298544.860229</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>11</td>
+      <td>Motorcycles</td>
+      <td>121818.990356</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>11</td>
+      <td>Planes</td>
+      <td>104681.629028</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>11</td>
+      <td>Ships</td>
+      <td>46502.380127</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>11</td>
+      <td>Trains</td>
+      <td>17226.010010</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>11</td>
+      <td>Trucks and Buses</td>
+      <td>77240.819702</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>11</td>
+      <td>Vintage Cars</td>
+      <td>186054.610229</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>12</td>
+      <td>Classic Cars</td>
+      <td>81352.640015</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>12</td>
+      <td>Motorcycles</td>
+      <td>19182.480103</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>12</td>
+      <td>Planes</td>
+      <td>56737.009644</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>12</td>
+      <td>Ships</td>
+      <td>23303.799561</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>12</td>
+      <td>Trains</td>
+      <td>14737.890137</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>12</td>
+      <td>Trucks and Buses</td>
+      <td>49835.600403</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>12</td>
+      <td>Vintage Cars</td>
+      <td>67906.509888</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>1</td>
+      <td>Classic Cars</td>
+      <td>99823.919678</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>1</td>
+      <td>Motorcycles</td>
+      <td>31890.579834</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>1</td>
+      <td>Planes</td>
+      <td>11262.270142</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>1</td>
+      <td>Ships</td>
+      <td>29868.489868</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>1</td>
+      <td>Trains</td>
+      <td>6510.170044</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>1</td>
+      <td>Trucks and Buses</td>
+      <td>26492.879761</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>1</td>
+      <td>Vintage Cars</td>
+      <td>42070.249756</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>2</td>
+      <td>Classic Cars</td>
+      <td>115195.170044</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>2</td>
+      <td>Motorcycles</td>
+      <td>38771.189697</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>2</td>
+      <td>Planes</td>
+      <td>23935.380249</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>2</td>
+      <td>Ships</td>
+      <td>9088.619995</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>2</td>
+      <td>Trains</td>
+      <td>6469.359985</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>2</td>
+      <td>Trucks and Buses</td>
+      <td>31138.020020</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>2</td>
+      <td>Vintage Cars</td>
+      <td>65304.560669</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>3</td>
+      <td>Classic Cars</td>
+      <td>73202.989990</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>3</td>
+      <td>Motorcycles</td>
+      <td>40329.600220</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>3</td>
+      <td>Planes</td>
+      <td>42489.399902</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>3</td>
+      <td>Ships</td>
+      <td>27680.170166</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>3</td>
+      <td>Trains</td>
+      <td>8462.399902</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>3</td>
+      <td>Trucks and Buses</td>
+      <td>13486.419922</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>3</td>
+      <td>Vintage Cars</td>
+      <td>58100.379883</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>4</td>
+      <td>Classic Cars</td>
+      <td>35151.600342</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>4</td>
+      <td>Motorcycles</td>
+      <td>44788.909912</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>4</td>
+      <td>Planes</td>
+      <td>6002.239990</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>4</td>
+      <td>Ships</td>
+      <td>6284.000000</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>4</td>
+      <td>Vintage Cars</td>
+      <td>13993.810242</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>5</td>
+      <td>Classic Cars</td>
+      <td>85662.100037</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>5</td>
+      <td>Motorcycles</td>
+      <td>7303.199951</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>5</td>
+      <td>Planes</td>
+      <td>26676.839600</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>5</td>
+      <td>Trains</td>
+      <td>4449.389893</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>5</td>
+      <td>Trucks and Buses</td>
+      <td>40104.230164</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>5</td>
+      <td>Vintage Cars</td>
+      <td>5608.579956</td>
+    </tr>
+  </tbody>
+</table>
+   </body>
+</html>
