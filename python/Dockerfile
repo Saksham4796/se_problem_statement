@@ -48,6 +48,8 @@ RUN pip3.10 install pyspark
 
 # Copy the data_processing_spark.py file to the working directory
 COPY data_processing_spark.py /app
+COPY output_HTML.py /app
+COPY website.js /app
 
 # Copy requirements file to working directory
 COPY requirements.txt .

@@ -1,12 +1,13 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, sum, month, year, to_date
+from pyspark.sql.functions import col, sum, month, year, to_date, desc, rank
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType
+from pyspark.sql.window import Window
 
 import os
 import mysql.connector
 import pandas as pd
 
-os.system("rm -rf total_sales.csv")
+os.system("rm -rf csv_files")
 
 # Create a Spark session
 spark = SparkSession.builder.appName("MySQL_data_processing_with_PySpark").getOrCreate()
@@ -56,5 +57,16 @@ total_sales = total_sales.orderBy("Year", "Month", "Product_Line")
 # display the result
 total_sales.show()
 
-total_sales.write.csv("total_sales.csv", header=True)
-os.system("cat total_sales.csv/part-* > total_sales_merged.csv")
+# Compute the total units sold for each product every year
+units_sold_df = df.groupBy("Year", "Month", "Product_Line").agg(sum("Quantity_Ordered").alias("Total_Units_Sold"))
+units_sold_df.show()
+
+# Sort the result DataFrame by Year and Total_Units_Sold in descending order
+sorted_df = units_sold_df.orderBy(["Year", "Month", "Total_Units_Sold"], ascending=[True, True, False])
+sorted_df.show()
+
+total_sales.write.csv("csv_files/total_sales", header=True)
+os.system("cat csv_files/total_sales/part-* > csv_files/total_sales_merged.csv")
+
+sorted_df.write.csv("csv_files/item_sale", header=True)
+os.system("cat csv_files/item_sale/part-* > csv_files/item_sale_merged.csv")

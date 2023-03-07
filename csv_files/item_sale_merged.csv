@@ -1,0 +1,180 @@
+Year,Month,Product_Line,Total_Units_Sold
+2003,1,Vintage Cars,572
+2003,1,Trucks and Buses,370
+2003,1,Classic Cars,334
+2003,1,Trains,81
+2003,2,Planes,460
+2003,2,Ships,301
+2003,2,Vintage Cars,301
+2003,2,Motorcycles,229
+2003,2,Classic Cars,120
+2003,2,Trains,38
+2003,3,Classic Cars,929
+2003,3,Vintage Cars,563
+2003,3,Motorcycles,170
+2003,3,Trucks and Buses,93
+2003,4,Classic Cars,465
+2003,4,Planes,401
+2003,4,Ships,323
+2003,4,Trucks and Buses,279
+2003,4,Vintage Cars,244
+2003,4,Motorcycles,212
+2003,4,Trains,69
+2003,5,Classic Cars,934
+2003,5,Vintage Cars,584
+2003,5,Motorcycles,251
+2003,5,Trucks and Buses,248
+2003,6,Planes,380
+2003,6,Classic Cars,338
+2003,6,Ships,319
+2003,6,Vintage Cars,313
+2003,6,Trucks and Buses,160
+2003,6,Trains,116
+2003,6,Motorcycles,23
+2003,7,Classic Cars,765
+2003,7,Motorcycles,408
+2003,7,Vintage Cars,295
+2003,7,Trucks and Buses,257
+2003,8,Motorcycles,440
+2003,8,Planes,371
+2003,8,Classic Cars,339
+2003,8,Ships,318
+2003,8,Vintage Cars,264
+2003,8,Trucks and Buses,136
+2003,8,Trains,106
+2003,9,Classic Cars,1139
+2003,9,Vintage Cars,587
+2003,9,Trucks and Buses,410
+2003,9,Ships,234
+2003,9,Trains,93
+2003,9,Motorcycles,47
+2003,10,Classic Cars,1928
+2003,10,Vintage Cars,975
+2003,10,Motorcycles,627
+2003,10,Planes,621
+2003,10,Trucks and Buses,253
+2003,10,Ships,141
+2003,10,Trains,132
+2003,11,Classic Cars,3879
+2003,11,Vintage Cars,2130
+2003,11,Trucks and Buses,1238
+2003,11,Motorcycles,1118
+2003,11,Ships,921
+2003,11,Planes,573
+2003,11,Trains,320
+2003,12,Classic Cars,1199
+2003,12,Vintage Cars,536
+2003,12,Trucks and Buses,409
+2003,12,Motorcycles,214
+2003,12,Planes,86
+2003,12,Trains,45
+2004,1,Classic Cars,1073
+2004,1,Vintage Cars,843
+2004,1,Motorcycles,460
+2004,1,Planes,413
+2004,1,Ships,332
+2004,1,Trains,78
+2004,1,Trucks and Buses,46
+2004,2,Classic Cars,1114
+2004,2,Motorcycles,493
+2004,2,Planes,424
+2004,2,Trucks and Buses,324
+2004,2,Ships,319
+2004,2,Vintage Cars,314
+2004,2,Trains,73
+2004,3,Classic Cars,647
+2004,3,Vintage Cars,602
+2004,3,Trucks and Buses,348
+2004,3,Ships,244
+2004,3,Trains,137
+2004,4,Classic Cars,824
+2004,4,Vintage Cars,618
+2004,4,Motorcycles,361
+2004,4,Planes,274
+2004,5,Classic Cars,590
+2004,5,Motorcycles,466
+2004,5,Planes,424
+2004,5,Trucks and Buses,353
+2004,5,Vintage Cars,202
+2004,5,Trains,89
+2004,5,Ships,40
+2004,6,Motorcycles,493
+2004,6,Trucks and Buses,414
+2004,6,Vintage Cars,395
+2004,6,Classic Cars,313
+2004,6,Ships,218
+2004,6,Planes,104
+2004,7,Classic Cars,1263
+2004,7,Vintage Cars,481
+2004,7,Planes,434
+2004,7,Trucks and Buses,380
+2004,7,Ships,267
+2004,7,Motorcycles,214
+2004,7,Trains,135
+2004,8,Classic Cars,1885
+2004,8,Vintage Cars,849
+2004,8,Motorcycles,675
+2004,8,Planes,384
+2004,8,Trucks and Buses,351
+2004,8,Ships,311
+2004,8,Trains,109
+2004,9,Classic Cars,799
+2004,9,Vintage Cars,793
+2004,9,Motorcycles,430
+2004,9,Trucks and Buses,415
+2004,9,Planes,360
+2004,9,Ships,286
+2004,9,Trains,88
+2004,10,Classic Cars,1786
+2004,10,Vintage Cars,1385
+2004,10,Trucks and Buses,750
+2004,10,Ships,529
+2004,10,Motorcycles,427
+2004,10,Planes,390
+2004,10,Trains,216
+2004,11,Classic Cars,3623
+2004,11,Vintage Cars,2305
+2004,11,Motorcycles,1403
+2004,11,Planes,1255
+2004,11,Trucks and Buses,881
+2004,11,Ships,564
+2004,11,Trains,177
+2004,12,Classic Cars,1006
+2004,12,Vintage Cars,818
+2004,12,Planes,681
+2004,12,Trucks and Buses,569
+2004,12,Ships,303
+2004,12,Motorcycles,268
+2004,12,Trains,159
+2005,1,Classic Cars,1099
+2005,1,Vintage Cars,539
+2005,1,Motorcycles,377
+2005,1,Trucks and Buses,337
+2005,1,Ships,320
+2005,1,Planes,175
+2005,1,Trains,79
+2005,2,Classic Cars,1352
+2005,2,Vintage Cars,776
+2005,2,Motorcycles,429
+2005,2,Trucks and Buses,356
+2005,2,Planes,270
+2005,2,Trains,108
+2005,2,Ships,102
+2005,3,Classic Cars,882
+2005,3,Vintage Cars,679
+2005,3,Motorcycles,513
+2005,3,Planes,511
+2005,3,Ships,324
+2005,3,Trucks and Buses,194
+2005,3,Trains,99
+2005,4,Motorcycles,530
+2005,4,Classic Cars,400
+2005,4,Vintage Cars,220
+2005,4,Planes,78
+2005,4,Ships,76
+2005,5,Classic Cars,930
+2005,5,Trucks and Buses,438
+2005,5,Planes,320
+2005,5,Vintage Cars,98
+2005,5,Motorcycles,77
+2005,5,Trains,75
