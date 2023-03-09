@@ -1,29 +1,26 @@
-## Problem Statement: Distributed Data Analytics for Sales Performance using MySQL Database and Redis
+## Problem Statement: Application performing data analytics for Sales Performance using MySQL Database
 
-Your company has recently started tracking sales data for its products and has stored the information in a MySQL database. The database contains information about sales for each product, including the date, product name, and the number of units sold. Your company would like to have a quick and easy way to analyze the sales data to gain insights into the performance of each product.
+The company ‘X’ has recently started tracking sales data for its products and has stored the information in a MySQL database. The database contains information such as quantity ordered for each product, price of each product on the date of Order, name of the product, Status(meaning the Product has been shipped or not), Date on which the product was ordered. The company ‘X’ would like to have a quick and easy way to analyze the sales data to gain insights into the performance of each product.
 
 #### Objective: 
-Develop a distributed software application that will extract sales data from the MySQL database, perform data analysis tasks on the data, and display the results in a HTML file. In this problem statement, the master node and worker nodes are the Virtual Machine Instances running on Google Cloud Platform. 
+Develop a distributed software application using Spark that will extract sales data from the MySQL database, perform data analysis tasks on the data, and display the results in a HTML file. 
 
 The application should perform the following tasks:
 
-#### Extract data: 
-The master node should extract sales data for each product from the MySQL database using SQL queries and store it in a data structure in Redis. The master node should be able to connect to the database using a secure connection and should have the ability to retrieve data based on specific dates, product names, etc.
+#### Create MySQL Database: 
+Take a sample\_data.csv file as input and store it in a MySQL database. This MySQL database should be stored a docker container. Write the Dockerfile which creates this database and stores the data present in the sample_data.csv file as a table.
 
-#### Data analysis: 
-The worker nodes should perform the following data analysis tasks on the extracted sales data:
+#### Design the Data Processing Application: 
+Write a python script which imports the data from MySQL database and performs data processing task such as:
+1. Calculates total sale for each time every month.
+2. Ranks item based on total units sold every month.
 
-1. Calculate the total number of units sold for each product
-2. Determine the average number of units sold per day for each product
-3. Identify the top-selling product in terms of total units sold
+The data processing task is to be performed using PySpark. The input data should be stored in the form of Dataframes and the output should be stored in the csv files. For both the task (1) and (2), two separate csv files should be produced as output.
 
 #### HTML report: 
-The master node should generate an HTML report that summarizes the results of the data analysis. The report should include the following information for each product:
-1. Total units sold
-2. Average units sold per day
-3. Rank based on total units sold (e.g. 1st, 2nd, 3rd, etc.)
+Also, write a python script which takes these two csv files as input and stores them in a single HTML file. The HTML file needs to be beautified using CSS and javascript.
 
-The HTML report should be easy to understand and visually appealing, with clear and concise graphics, charts, and tables. The report should also be interactive, allowing users to quickly access the data they need by clicking on different sections of the report.
+This complete application(data processing task and storing in HTML file) is to be stored in a separate Docker container. Write a Dockerfile which stores in this application and also installs PySpark and all it’s dependencies. The Dockerfile should also set up all the environment variable so that PySpark and all the essential libraries are fully functional.
 
-#### Final Deliverable:
-Your task is to develop the distributed software application that meets these requirements using Redis for data distribution and coordination between the master node and worker nodes. The solution should be efficient, scalable, and easy to maintain. You should use a programming language such as Python, Java, or C# to develop the application and should have a good understanding of SQL, databases, and Redis.
+#### Integrating all the components:
+Finally, write a docker-compose.yml file which establishes a connection between the Docker container which stores the data in MySQL and the Docker container which stores the python application.
