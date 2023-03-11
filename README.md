@@ -11,3 +11,5 @@ The `docker-compose.yml` file builds both the docker containers and also make a 
 This distributed application is executed on virtual machine intances present on google cloud platform. [VM Instance](https://github.com/Saksham4796/vm_for_se_problem) repo presents the code for creating instances and runnning the application on those instance in a distributed fashion.
 
 The `docker_command.md` file contains all the relevant docker commands used in developing this application.
+
+The chatGPT transcipt for solving this problem is available [here](https://github.com/Saksham4796/chatGPT_Transcipts).
