@@ -12,4 +12,4 @@ This distributed application is executed on virtual machine intances present on 
 
 The `docker_command.md` file contains all the relevant docker commands used in developing this application.
 
-The chatGPT transcipt for solving this problem is available [here](https://github.com/Saksham4796/chatGPT_Transcipts).
+The chatGPT transcipt for solving this problem is available [here](https://github.com/Saksham4796/chatGPT_Transcipts/blob/master/chatGPT_Transcipt.md).
